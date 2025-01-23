@@ -1,0 +1,237 @@
+/* Reset de estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo base para el cuerpo */
+body {
+  background: linear-gradient(135deg, #7a7cfc, #00d2ff);
+  color: #fff;
+  font-size: 1.1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 70px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Cabecera fija en la parte superior */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para el menú principal */
+#mainMenu {
+  margin-top: 200px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.3s ease-out;
+}
+
+#mainMenu ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#mainMenu h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Estilos de los botones de menú */
+.menu-item {
+  display: flex;
+  background: linear-gradient(90deg, #0044cc, #00aaff); /* Nuevo color */
+  color: white;
+  padding: 20px 30px;
+  margin: 15px 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.menu-item:hover {
+  display: flex;
+  background: linear-gradient(90deg, #ff5e62, #ff9966); /* Color de hover */
+  padding: 20px 30px;
+  margin: 15px 20px;
+  transform: scale(1.05);
+}
+
+/* Estilos del contenido */
+#content {
+  display: none;
+  margin-top: 100px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 15px 25px rgba(200, 244, 5, 0.915);
+  max-width: 900px;
+  width: 100%;
+  color: #0e0808;
+  text-align: left;
+}
+
+/* Estilo para los títulos principales */
+#content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #ff1b1b; /* Rojo brillante */
+  letter-spacing: 2px;
+}
+
+/* Estilo para los subtítulos */
+#content h2 {
+  font-size: 1.8rem;
+  margin-top: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #ffffff; /* Amarillo */
+}
+
+/* Estilo para las descripciones */
+.description {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000000; /* Blanco */
+  margin-bottom: 20px;
+}
+
+/* Estilo para imágenes */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Botón de regreso */
+#backButton {
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 30px;
+}
+
+#backButton:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* Estilo para los nuevos botones */
+button {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin: 10px 5px;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: scale(1.05);
+}
+
+/* Estilo para el contenedor de contenido dinámico */
+#dynamicContent {
+  padding: 20px;
+  background: #1b92ec;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Estilo para el contenido extra */
+#extraContent {
+  margin-top: 20px;
+}/* Estilo para el logo */
+#logo {
+  width: 150px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantiene la proporción del logo */
+  display: block; /* Asegura que el logo se comporte como un bloque */
+  margin: 0 auto; /* Centra el logo horizontalmente */
+  padding: 10px; /* Añade un poco de espacio alrededor del logo */
+}
+
+/* Otros estilos existentes */
+button:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: scale(1.05);
+}
+
+/* Estilo para el contenedor de contenido dinámico */
+#dynamicContent {
+  padding: 20px;
+  background: #1b92ec;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Estilo para el contenido extra */
+#extraContent {
+  margin-top: 20px;
+}
